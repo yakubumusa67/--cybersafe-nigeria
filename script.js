@@ -208,3 +208,80 @@ alert(messages[randomMessage]);
 // Show Message After 30 Seconds
 
 setTimeout(cyberMessage,30000);
+function calculateScore(){
+
+let score=0;
+
+
+const answers={
+
+q1:"a",
+q2:"c",
+q3:"b",
+q4:"a",
+q5:"a"
+
+};
+
+
+
+for(let question in answers){
+
+let option=document.querySelector(
+
+'input[name="'+question+'"]:checked'
+
+);
+
+
+if(option && option.value===answers[question]){
+
+score++;
+
+}
+
+}
+
+
+
+let percentage=(score/5)*100;
+
+let grade="";
+
+
+if(percentage>=90){
+
+grade="EXCELLENT";
+
+}
+
+else if(percentage>=70){
+
+grade="VERY GOOD";
+
+}
+
+else if(percentage>=60){
+
+grade="GOOD";
+
+}
+
+else{
+
+grade="KEEP LEARNING";
+
+}
+
+
+
+document.getElementById("result").innerHTML=
+
+"YOUR SCORE : "+score+
+"/5 <br><br>"+
+"PERCENTAGE : "+percentage+
+"% <br><br>"+
+"GRADE : "+grade;
+
+
+}
