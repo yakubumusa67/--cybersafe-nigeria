@@ -123,3 +123,35 @@ font-size:20px;
 line-height:1.8;
 
 }
+.courses{
+
+padding:60px 30px;
+
+}
+
+
+.course-card{
+
+background:white;
+padding:30px;
+margin-top:30px;
+border-radius:20px;
+box-shadow:0 0 20px lightgray;
+
+}
+
+
+.course-card h2{
+
+color:blue;
+
+}
+
+
+.course-card p{
+
+line-height:1.8;
+
+font-size:18px;
+
+}
