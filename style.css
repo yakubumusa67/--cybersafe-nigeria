@@ -56,3 +56,70 @@ margin-top:30px;
 a:hover{
 opacity:0.8;
 }
+.statistics,
+.cyber-tips,
+.resources,
+.password-guide,
+.scam-alert,
+.founder{
+
+padding:50px 30px;
+
+}
+
+
+.stat-card{
+
+background:white;
+padding:25px;
+margin:20px;
+border-radius:15px;
+box-shadow:0 0 15px lightgray;
+
+}
+
+
+.cyber-tips ul{
+
+line-height:2;
+
+}
+
+
+.resources ul{
+
+line-height:2;
+
+}
+
+
+.password-guide ul{
+
+line-height:2;
+
+}
+
+
+.alert-box{
+
+background:#f5f5f5;
+padding:20px;
+margin-top:20px;
+border-radius:15px;
+
+}
+
+
+.founder{
+
+text-align:center;
+
+}
+
+
+.founder p{
+
+font-size:20px;
+line-height:1.8;
+
+}
