@@ -223,3 +223,67 @@ margin-top:25px;
     margin-left:8px;
     font-weight:bold;
 }
+header{
+
+background:black;
+text-align:center;
+padding:30px;
+
+}
+
+
+header h1{
+
+color:white;
+font-size:50px;
+margin-bottom:10px;
+
+}
+
+
+.slogan{
+
+color:#00BFFF;
+font-size:20px;
+letter-spacing:2px;
+margin-bottom:20px;
+
+}
+
+
+nav{
+
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+
+}
+
+
+nav a{
+
+color:white;
+text-decoration:none;
+font-size:18px;
+font-weight:bold;
+padding-bottom:8px;
+transition:0.3s;
+
+}
+
+
+nav a:hover{
+
+color:#00BFFF;
+border-bottom:3px solid #00BFFF;
+
+}
+
+
+.active{
+
+color:#00BFFF;
+border-bottom:3px solid #00BFFF;
+
+}
