@@ -200,3 +200,26 @@ hr{
 margin-top:25px;
 
 }
+.newsletter{
+    text-align:center;
+    padding:50px 20px;
+    background:#111;
+    color:white;
+}
+
+.newsletter input{
+    padding:12px;
+    width:260px;
+    border:none;
+    border-radius:8px;
+    margin-top:10px;
+}
+
+.newsletter button{
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    margin-left:8px;
+    font-weight:bold;
+}
