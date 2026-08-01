@@ -642,3 +642,25 @@ nav a{
 }
 
 }
+/* ==========================
+   COURSE BUTTON
+========================== */
+
+.course-btn {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 24px;
+    background: #0077ff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 18px rgba(0,119,255,0.3);
+}
+
+.course-btn:hover {
+    background: #005fd1;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(0,119,255,0.45);
+}
