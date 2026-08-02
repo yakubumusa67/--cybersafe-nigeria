@@ -772,3 +772,49 @@ body.dark-mode button{
 #darkModeBtn:hover{
     transform:scale(1.05);
 }
+/* Password Strength Checker */
+
+.password-checker{
+    background:#ffffff;
+    padding:40px;
+    margin:50px auto;
+    max-width:700px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+    text-align:center;
+}
+
+.password-checker input{
+    width:100%;
+    padding:15px;
+    margin:20px 0;
+    border:2px solid #0077ff;
+    border-radius:10px;
+    font-size:18px;
+}
+
+.password-checker button{
+    padding:14px 30px;
+    background:#0077ff;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.password-checker button:hover{
+    background:#0056c7;
+}
+
+#strength{
+    margin-top:20px;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.password-tips{
+    margin-top:30px;
+    text-align:left;
+}
