@@ -318,3 +318,33 @@ if (localStorage.getItem("theme") === "dark") {
     }
 
 }
+function checkPassword(){
+
+    let password=document.getElementById("password").value;
+    let strength=document.getElementById("strength");
+
+    let score=0;
+
+    if(password.length>=12) score++;
+    if(/[A-Z]/.test(password)) score++;
+    if(/[a-z]/.test(password)) score++;
+    if(/[0-9]/.test(password)) score++;
+    if(/[!@#$%^&*(),.?":{}|<>]/.test(password)) score++;
+
+    if(password.length===0){
+        strength.innerHTML="";
+    }
+    else if(score<=2){
+        strength.style.color="red";
+        strength.innerHTML="❌ Weak Password";
+    }
+    else if(score===3 || score===4){
+        strength.style.color="orange";
+        strength.innerHTML="⚠ Medium Password";
+    }
+    else{
+        strength.style.color="green";
+        strength.innerHTML="✅ Strong Password";
+    }
+
+}
