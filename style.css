@@ -700,3 +700,33 @@ nav a{
     color: #555;
     line-height: 1.7;
 }
+/* ===== COURSE DETAILS ===== */
+
+.level{
+display:inline-block;
+padding:6px 14px;
+border-radius:30px;
+font-size:.85rem;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+.beginner{
+background:#d9fbe3;
+color:#0d7a38;
+}
+
+.course-meta{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+margin:18px 0;
+font-weight:600;
+color:#444;
+}
+
+.rating{
+font-size:18px;
+color:#ffb400;
+margin-bottom:20px;
+}
