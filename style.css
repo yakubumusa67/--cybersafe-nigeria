@@ -730,3 +730,45 @@ font-size:18px;
 color:#ffb400;
 margin-bottom:20px;
 }
+/* ==========================
+   DARK MODE
+========================== */
+
+body.dark-mode{
+    background:#121212;
+    color:#ffffff;
+}
+
+body.dark-mode header,
+body.dark-mode nav,
+body.dark-mode footer,
+body.dark-mode section,
+body.dark-mode .course-card{
+    background:#1e1e1e;
+    color:#ffffff;
+}
+
+body.dark-mode a{
+    color:#4fc3f7;
+}
+
+body.dark-mode button{
+    background:#333333;
+    color:#ffffff;
+    border:1px solid #666666;
+}
+
+#darkModeBtn{
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+    margin-left:15px;
+    transition:0.3s;
+}
+
+#darkModeBtn:hover{
+    transform:scale(1.05);
+}
