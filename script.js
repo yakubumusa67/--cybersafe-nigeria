@@ -285,3 +285,36 @@ document.getElementById("result").innerHTML=
 
 
 }
+/* ==========================
+   DARK MODE
+========================== */
+
+const darkModeBtn = document.getElementById("darkModeBtn");
+
+if (darkModeBtn) {
+
+    darkModeBtn.addEventListener("click", function () {
+
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+            darkModeBtn.innerHTML = "☀️ Light Mode";
+            localStorage.setItem("theme", "dark");
+        } else {
+            darkModeBtn.innerHTML = "🌙 Dark Mode";
+            localStorage.setItem("theme", "light");
+        }
+
+    });
+
+}
+
+if (localStorage.getItem("theme") === "dark") {
+
+    document.body.classList.add("dark-mode");
+
+    if (darkModeBtn) {
+        darkModeBtn.innerHTML = "☀️ Light Mode";
+    }
+
+}
