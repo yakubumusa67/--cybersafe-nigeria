@@ -431,6 +431,55 @@ body.dark-mode #darkModeBtn {
     color: #050807;
 }
 </style>
+<script>
+function checkPassword() {
+    const password = document.getElementById("password").value;
+    const strength = document.getElementById("strength");
 
+    if (password.length === 0) {
+        strength.textContent = "⚠️ Please enter a password.";
+        strength.style.color = "orange";
+        return;
+    }
+
+    let score = 0;
+
+    // Length
+    if (password.length >= 12) score++;
+
+    // Uppercase
+    if (/[A-Z]/.test(password)) score++;
+
+    // Lowercase
+    if (/[a-z]/.test(password)) score++;
+
+    // Number
+    if (/[0-9]/.test(password)) score++;
+
+    // Special character
+    if (/[^A-Za-z0-9]/.test(password)) score++;
+
+    if (score <= 1) {
+        strength.textContent = "🔴 Very Weak Password";
+        strength.style.color = "red";
+    } 
+    else if (score === 2) {
+        strength.textContent = "🟠 Weak Password";
+        strength.style.color = "orange";
+    } 
+    else if (score === 3) {
+        strength.textContent = "🟡 Medium Password";
+        strength.style.color = "gold";
+    } 
+    else if (score === 4) {
+        strength.textContent = "🟢 Strong Password";
+        strength.style.color = "limegreen";
+    } 
+    else {
+        strength.textContent = "💪 Very Strong Password";
+        strength.style.color = "#39ff88";
+    }
+}
+</script>
 </body>
 </html>
