@@ -296,6 +296,40 @@ function checkAnswer(answer) {
 
 }
 </script>
+<!-- COURSE COMPLETION -->
+<div style="text-align:center; margin:40px 0;">
 
+    <button
+        onclick="completeCourse3()"
+        style="
+            padding:14px 25px;
+            background:#4ade80;
+            color:#000;
+            border:none;
+            border-radius:8px;
+            font-size:16px;
+            font-weight:bold;
+            cursor:pointer;
+        "
+    >
+        ✅ Complete Course 3
+    </button>
+
+    <p id="completionMessage" style="margin-top:15px;"></p>
+
+</div>
+
+<script>
+function completeCourse3() {
+
+    localStorage.setItem("course3Progress", "100");
+
+    document.getElementById("completionMessage").innerHTML =
+        "🎉 Course 3 completed successfully!";
+
+    document.getElementById("completionMessage").style.color =
+        "#4ade80";
+}
+</script>
 </body>
 </html>
