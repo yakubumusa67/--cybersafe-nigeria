@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lesson 8 - Network Security | CyberSafe Nigeria</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #020617, #001f3f, #003b66);
+            color: white;
+            line-height: 1.7;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 8%;
+            background: rgba(0, 0, 0, 0.35);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.3rem;
+        }
+
+        .shield {
+            font-size: 2.5rem;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 35px auto;
+        }
+
+        .back {
+            color: #60a5fa;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .lesson-number {
+            color: #38bdf8;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            color: #38bdf8;
+        }
+
+        .time {
+            color: #cbd5e1;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.06);
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .danger {
+            border-left: 4px solid #ef4444;
+        }
+
+        .safe {
+            border-left: 4px solid #22c55e;
+        }
+
+        .warning {
+            border-left: 4px solid #facc15;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        .quiz {
+            background: rgba(15,23,42,0.85);
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 40px;
+        }
+
+        .question {
+            margin-bottom: 30px;
+        }
+
+        .question button {
+            display: block;
+            width: 100%;
+            text-align: left;
+            margin: 8px 0;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 8px;
+            background: #1e40af;
+            color: white;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .question button:hover {
+            background: #2563eb;
+        }
+
+        .result {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: bold;
+            background: #0f172a;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin-top: 40px;
+            padding-bottom: 50px;
+        }
+
+        .nav-button {
+            padding: 13px 22px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .nav-button:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: rgba(0,0,0,0.4);
+            color: #94a3b8;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="shield">🛡️</div>
+
+    <h1>CyberSafe Nigeria</h1>
+
+    <p>Cybersecurity Education & Awareness</p>
+</header>
+
+<main class="container">
+
+    <a href="lesson7.html" class="back">
+        ← Back to Lesson 7
+    </a>
+
+    <p class="lesson-number">
+        Lesson 8 of 10
+    </p>
+
+    <h2>Basic Network Security</h2>
+
+    <p class="time">
+        ⏱ Estimated Time: 20 Minutes
+    </p>
+
+
+    <div class="card">
+
+        <h3>🌐 What Is a Network?</h3>
+
+        <p>
+            A network is a group of connected devices that can
+            communicate and share information or resources.
+        </p>
+
+        <p>
+            Networks can include computers, smartphones, servers,
+            printers, routers, and other devices.
+        </p>
+
+    </div>
+
+
+    <div class="card safe">
+
+        <h3>🛡️ Why Network Security Matters</h3>
+
+        <p>
+            Network security helps protect devices, information,
+            and communication from unauthorized access and other
+            security threats.
+        </p>
+
+        <p>
+            Good network security is important at home, in schools,
+            businesses, and public environments.
+        </p>
+
+    </div>
+
+
+    <div class="card">
+
+        <h3>📡 Secure Your Wi-Fi</h3>
+
+        <ul>
+            <li>Use a strong Wi-Fi password.</li>
+
+            <li>
+                Change default administrator passwords on your
+                router when appropriate.
+            </li>
+
+            <li>
+                Keep your router's firmware updated.
+            </li>
+
+            <li>
+                Use modern Wi-Fi security such as WPA2 or WPA3
+                when supported.
+            </li>
+
+            <li>
+                Avoid sharing your Wi-Fi password publicly.
+            </li>
+        </ul>
+
+    </div>
+
+
+    <div class="card warning">
+
+        <h3>⚠️ Public Wi-Fi</h3>
+
+        <p>
+            Public Wi-Fi can be convenient, but you should still
+            be careful when using it.
+        </p>
+
+        <ul>
+            <li>Confirm that you are connecting to the correct network.</li>
+
+            <li>
+                Avoid entering sensitive information on suspicious
+                websites or networks.
+            </li>
+
+            <li>
+                Keep your device's security protections enabled.
+            </li>
+
+            <li>
+                Use HTTPS websites when entering information.
+            </li>
+
+            <li>
+                Disconnect from networks you no longer need.
+            </li>
+        </ul>
+
+    </div>
+
+
+    <div class="card">
+
+        <h3>🔒 What Is HTTPS?</h3>
+
+        <p>
+            HTTPS helps protect information exchanged between your
+            browser and a website by encrypting the connection.
+        </p>
+
+        <p>
+            Look for the lock symbol and <strong>https://</strong>
+            when visiting websites, especially before entering
+            sensitive information.
+        </p>
+
+        <p>
+            Remember: HTTPS helps protect the connection, but it
+            does not automatically mean that a website itself is
+            trustworthy.
+        </p>
+
+    </div>
+
+
+    <div class="card">
+
+        <h3>🔥 Firewalls</h3>
+
+        <p>
+            A firewall is a security control that can monitor and
+            control network traffic based on defined rules.
+        </p>
+
+        <p>
+            Firewalls can help reduce unauthorized network access,
+            but they are only one part of a complete cybersecurity
+            strategy.
+        </p>
+
+    </div>
+
+
+    <div class="card danger">
+
+        <h3>🚨 Warning Signs</h3>
+
+        <ul>
+            <li>Unknown devices connected to your network.</li>
+
+            <li>
+                Unexpected changes to router settings.
+            </li>
+
+            <li>
+                Unusual network activity.
+            </li>
+
+            <li>
+                Your Wi-Fi password suddenly stops working.
+            </li>
+
+            <li>
+                Security warnings that you cannot explain.
+            </li>
+        </ul>
+
+    </div>
+
+
+    <div class="card safe">
+
+        <h3>✅ Network Security Checklist</h3>
+
+        <ul>
+            <li>Use a strong Wi-Fi password.</li>
+
+            <li>Update your router regularly.</li>
+
+            <li>Secure your devices.</li>
+
+            <li>Be careful on public Wi-Fi.</li>
+
+            <li>Use HTTPS when appropriate.</li>
+
+            <li>Keep firewall protections enabled where appropriate.</li>
+
+            <li>Monitor unfamiliar devices on your network.</li>
+        </ul>
+
+    </div>
+
+
+    <!-- QUIZ -->
+
+    <section class="quiz">
+
+        <h2>Quick Quiz</h2>
+
+
+        <div class="question">
+
+            <p>
+                <strong>
+                    1. What is a network?
+                </strong>
+            </p>
+
+            <button onclick="answer(this,true)">
+                A. Connected devices that can communicate
+            </button>
+
+            <button onclick="answer(this,false)">
+                B. A type of password
+            </button>
+
+            <button onclick="answer(this,false)">
+                C. A computer game
+            </button>
+
+            <button onclick="answer(this,false)">
+                D. A keyboard
+            </button>
+
+        </div>
+
+
+        <div class="question">
+
+            <p>
+                <strong>
+                    2. Which is a good Wi-Fi security practice?
+                </strong>
+            </p>
+
+            <button onclick="answer(this,false)">
+                A. Use the default password forever
+            </button>
+
+            <button onclick="answer(this,true)">
+                B. Use a strong Wi-Fi password
+            </button>
+
+            <button onclick="answer(this,false)">
+                C. Share your password publicly
+            </button>
+
+            <button onclick="answer(this,false)">
+                D. Disable all security settings
+            </button>
+
+        </div>
+
+
+        <div class="question">
+
+            <p>
+                <strong>
+                    3. What does HTTPS help provide?
+                </strong>
+            </p>
+
+            <button onclick="answer(this,true)">
+                A. An encrypted connection between your browser and website
+            </button>
+
+            <button onclick="answer(this,false)">
+                B. Free internet
+            </button>
+
+            <button onclick="answer(this,false)">
+                C. Automatic malware removal
+            </button>
+
+            <button onclick="answer(this,false)">
+                D. Unlimited storage
+            </button>
+
+        </div>
+
+
+        <div class="question">
+
+            <p>
+                <strong>
+                    4. What should you do on public Wi-Fi?
+                </strong>
+            </p>
+
+            <button onclick="answer(this,false)">
+                A. Connect to every network you see
+            </button>
+
+            <button onclick="answer(this,true)">
+                B. Verify the network and use safe browsing practices
+            </button>
+
+            <button onclick="answer(this,false)">
+                C. Disable all security protections
+            </button>
+
+            <button onclick="answer(this,false)">
+                D. Share sensitive information with strangers
+            </button>
+
+        </div>
+
+
+        <div class="question">
+
+            <p>
+                <strong>
+                    5. What is a firewall?
+                </strong>
+            </p>
+
+            <button onclick="answer(this,false)">
+                A. A type of password
+            </button>
+
+            <button onclick="answer(this,true)">
+                B. A security control that can monitor network traffic
+            </button>
+
+            <button onclick="answer(this,false)">
+                C. A social media application
+            </button>
+
+            <button onclick="answer(this,false)">
+                D. A web browser
+            </button>
+
+        </div>
+
+
+        <div id="quizResult" class="result"></div>
+
+    </section>
+
+
+    <div class="navigation">
+
+        <a href="lesson7.html" class="nav-button">
+            ← Previous Lesson
+        </a>
+
+        <a href="lesson9.html" class="nav-button">
+            Next Lesson →
+        </a>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <p>© 2026 CyberSafe Nigeria</p>
+
+    <p>
+        Designed & Founded by Yakubu Musa
+    </p>
+
+</footer>
+
+
+<script>
+
+let score = 0;
+let answered = 0;
+
+function answer(button, correct) {
+
+    const question = button.parentElement;
+
+    if (question.dataset.answered === "true") {
+        return;
+    }
+
+    question.dataset.answered = "true";
+
+    answered++;
+
+    if (correct) {
+
+        button.style.background = "#16a34a";
+
+        score++;
+
+    } else {
+
+        button.style.background = "#dc2626";
+
+    }
+
+    if (answered === 5) {
+
+        const result =
+            document.getElementById("quizResult");
+
+        result.style.display = "block";
+
+        if (score === 5) {
+
+            result.textContent =
+                "🏆 Perfect! You scored 5/5.";
+
+        } else if (score >= 4) {
+
+            result.textContent =
+                "🎉 Excellent! You scored " +
+                score + "/5.";
+
+        } else if (score >= 3) {
+
+            result.textContent =
+                "👍 Good job! You scored " +
+                score + "/5.";
+
+        } else {
+
+            result.textContent =
+                "📚 You scored " +
+                score +
+                "/5. Review the lesson and try again.";
+
+        }
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
