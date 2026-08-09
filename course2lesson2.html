@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Course 2 Lesson 2 - Password Managers & MFA | CyberSafe Nigeria</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #020617, #001f3f, #003b66);
+            color: white;
+            line-height: 1.7;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 20px;
+            background: rgba(0,0,0,0.35);
+        }
+
+        .shield {
+            font-size: 45px;
+        }
+
+        header h1 {
+            margin: 5px 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 35px auto;
+        }
+
+        .back {
+            color: #60a5fa;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .lesson-number {
+            color: #38bdf8;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            color: #38bdf8;
+        }
+
+        .time {
+            color: #cbd5e1;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.07);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+
+        .safe {
+            border-left: 4px solid #22c55e;
+        }
+
+        .warning {
+            border-left: 4px solid #facc15;
+        }
+
+        .final {
+            text-align: center;
+            padding: 30px;
+            background: rgba(34,197,94,0.1);
+            border: 1px solid rgba(34,197,94,0.3);
+            border-radius: 16px;
+            margin: 30px 0;
+        }
+
+        li {
+            margin: 9px 0;
+        }
+
+        .quiz {
+            background: rgba(15,23,42,0.9);
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 35px;
+        }
+
+        .question {
+            margin-bottom: 30px;
+        }
+
+        .question button {
+            display: block;
+            width: 100%;
+            text-align: left;
+            margin: 8px 0;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 8px;
+            background: #1e40af;
+            color: white;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .question button:hover {
+            background: #2563eb;
+        }
+
+        .result {
+            display: none;
+            margin-top: 20px;
+            padding: 18px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .completion {
+            display: none;
+            text-align: center;
+            margin-top: 25px;
+            padding: 25px;
+            border: 2px solid #22c55e;
+            border-radius: 15px;
+            background: rgba(34,197,94,0.1);
+        }
+
+        .completion h2 {
+            color: #22c55e;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin-top: 40px;
+            padding-bottom: 50px;
+        }
+
+        .nav-button {
+            padding: 13px 20px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .nav-button:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: rgba(0,0,0,0.4);
+            color: #94a3b8;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="shield">🛡️</div>
+
+    <h1>CyberSafe Nigeria</h1>
+
+    <p>Cybersecurity Education & Awareness</p>
+
+</header>
+
+
+<main class="container">
+
+    <a href="course2lesson1.html" class="back">
+        ← Back to Lesson 1
+    </a>
+
+
+    <p class="lesson-number">
+        Course 2 • Lesson 2 of 2
+    </p>
+
+
+    <h2>🛡️ Password Managers & Multi-Factor Authentication</h2>
+
+    <p class="time">
+        ⏱️ Estimated Time: 10 Minutes
+    </p>
+
+
+    <div class="final">
+
+        <h2>🎓 Final Lesson of Course 2</h2>
+
+        <p>
+            You made it to the final lesson!
+        </p>
+
+        <p>
+            Now let's learn two powerful ways to strengthen
+            your account security:
+            <strong>Password Managers</strong> and
+            <strong>Multi-Factor Authentication.</strong>
+        </p>
+
+    </div>
+
+
+    <div class="card">
+
+        <h3>🔐 What Is a Password Manager?</h3>
+
+        <p>
+            A password manager is a tool that can securely store
+            your passwords and help you create strong, unique
+            passwords for different accounts.
+        </p>
+
+        <p>
+            Instead of trying to remember dozens of different
+            passwords, you can use a password manager to manage
+            them more securely.
+        </p>
+
+    </div>
+
+
+    <div class="card safe">
+
+        <h3>✅ Benefits of Password Managers</h3>
+
+        <ul>
+            <li>Help create strong passwords.</li>
+
+            <li>Help store unique passwords for different accounts.</li>
+
+            <li>Reduce the need to remember many passwords.</li>
+
+            <li>Can help identify weak or reused passwords.</li>
+
+            <li>Can make secure password practices easier.</li>
+        </ul>
+
+    </div>
+
+
+    <div class="card">
+
+        <h3>🛡️ What Is Multi-Factor Authentication?</h3>
+
+        <p>
+            Multi-Factor Authentication, commonly called
+            <strong>MFA</strong>, adds another verification step
+            when you sign in to an account.
+        </p>
+
+        <p>
+            Instead of relying only on a password, MFA can require
+            another factor to verify that it is really you.
+        </p>
+
+    </div>
+
+
+    <div class="card safe">
+
+        <h3>🔑 Common Authentication Factors</h3>
+
+        <ul>
+
+            <li>
+                <strong>Something you know:</strong>
+                such as a password or PIN.
+            </li>
+
+            <li>
+                <strong>Something you have:</strong>
+                such as an authentication device or security key.
+            </li>
+
+            <li>
+                <strong>Something you are:</strong>
+                such as a fingerprint or facial recognition.
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="card warning">
+
+        <h3>⚠️ Never Share Verification Codes</h3>
+
+        <p>
+            Treat verification codes like passwords.
+        </p>
+
+        <p>
+            If someone contacts you and asks for a login
+            verification code, be extremely cautious.
+        </p>
+
+        <p>
+            A legitimate support representative should not need
+            you to disclose a private authentication code.
+        </p>
+
+    </div>
+
+
+    <div class="card">
+
+        <h3>🧠 Password Security Checklist</h3>
+
+        <ul>
+            <li>Use long, unique passwords.</li>
+
+            <li>Don't reuse important passwords.</li>
+
+            <li>Consider using a reputable password manager.</li>
+
+            <li>Enable MFA on important accounts.</li>
+
+            <li>Never share passwords or verification codes.</li>
+
+            <li>Review your accounts regularly.</li>
+        </ul>
+
+    </div>
+
+
+    <!-- FINAL QUIZ -->
+
+    <section class="quiz">
+
+        <h2>🏆 Course 2 Final Quiz</h2>
+
+        <p>
+            Answer all five questions to complete Course 2.
+        </p>
+
+
+        <div class="question">
+
+            <p>
+                <strong>
+                    1. What is a password manager?
+                </strong>
+            </p>
+
+            <button onclick="answer(this, true)">
+                A. A tool that can securely store and manage passwords
+            </button>
+
+            <button onclick="answer(this, false)">
+                B. A social media platform
+            </button>
+
+            <button onclick="answer(this, false)">
+                C. A type of computer virus
+            </button>
+
+            <button onclick="answer(this, false)">
+                D. A Wi-Fi network
+            </button>
+
+        </div>
+
+
+        <div class="question">
+
+            <p>
+                <strong>
+                    2. What does MFA provide?
+                </strong>
+            </p>
+
+            <button onclick="answer(this, false)">
+                A. Free internet
+            </button>
+
+            <button onclick="answer(this, true)">
+                B. An additional verification step
+            </button>
+
+            <button onclick="answer(this, false)">
+                C. Automatic password sharing
+            </button>
+
+            <button onclick="answer(this, false)">
+                D. Unlimited storage
+            </button>
+
+        </div>
+
+
+        <div class="question">
+
+            <p>
+                <strong>
+                    3. Which is an example of "something you are"?
+                </strong>
+            </p>
+
+            <button onclick="answer(this, false)">
+                A. Password
+            </button>
+
+            <button onclick="answer(this, false)">
+                B. Security key
+            </button>
+
+            <button onclick="answer(this, true)">
+                C. Fingerprint
+            </button>
+
+            <button onclick="answer(this, false)">
+                D. PIN
+            </button>
+
+        </div>
+
+
+        <div class="question">
+
+            <p>
+                <strong>
+                    4. What should you do if someone asks for your verification code?
+                </strong>
+            </p>
+
+            <button onclick="answer(this, false)">
+                A. Give it to them immediately
+            </button>
+
+            <button onclick="answer(this, true)">
+                B. Do not share it and verify the request
+            </button>
+
+            <button onclick="answer(this, false)">
+                C. Post it online
+            </button>
+
+            <button onclick="answer(this, false)">
+                D. Send it to a stranger
+            </button>
+
+        </div>
+
+
+        <div class="question">
+
+            <p>
+                <strong>
+                    5. Which is a good password-security practice?
+                </strong>
+            </p>
+
+            <button onclick="answer(this, true)">
+                A. Use unique passwords and enable MFA
+            </button>
+
+            <button onclick="answer(this, false)">
+                B. Reuse one password everywhere
+            </button>
+
+            <button onclick="answer(this, false)">
+                C. Share your password with friends
+            </button>
+
+            <button onclick="answer(this, false)">
+                D. Use simple passwords
+            </button>
+
+        </div>
+
+
+        <div id="result" class="result"></div>
+
+
+        <div id="completion" class="completion">
+
+            <h2>🎉 COURSE 2 COMPLETED!</h2>
+
+            <p>
+                Congratulations!
+            </p>
+
+            <p>
+                You completed both lessons in
+                <strong>Password Security.</strong>
+            </p>
+
+            <p>
+                🔐 Strong Passwords +
+                🛡️ MFA +
+                🔑 Smart Security Habits
+            </p>
+
+            <p>
+                <strong>
+                    Keep learning. Stay CyberSafe.
+                </strong>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <div class="navigation">
+
+        <a href="course2lesson1.html" class="nav-button">
+            ← Lesson 1
+        </a>
+
+        <a href="courses.html" class="nav-button">
+            🏠 Back to Courses
+        </a>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 CyberSafe Nigeria
+    </p>
+
+    <p>
+        Designed & Founded by Yakubu Musa
+    </p>
+
+</footer>
+
+
+<script>
+
+let score = 0;
+let answered = 0;
+
+function answer(button, correct) {
+
+    const question = button.parentElement;
+
+    if (question.dataset.answered === "true") {
+        return;
+    }
+
+    question.dataset.answered = "true";
+
+    answered++;
+
+    if (correct) {
+
+        button.style.background = "#16a34a";
+
+        score++;
+
+    } else {
+
+        button.style.background = "#dc2626";
+
+    }
+
+
+    if (answered === 5) {
+
+        const result =
+            document.getElementById("result");
+
+        const completion =
+            document.getElementById("completion");
+
+        result.style.display = "block";
+
+
+        if (score === 5) {
+
+            result.style.background = "#14532d";
+
+            result.textContent =
+                "🏆 PERFECT SCORE! You scored 5/5.";
+
+            completion.style.display = "block";
+
+        } else if (score >= 4) {
+
+            result.style.background = "#14532d";
+
+            result.textContent =
+                "🎉 Excellent! You scored " +
+                score +
+                "/5. Course 2 completed!";
+
+            completion.style.display = "block";
+
+        } else if (score >= 3) {
+
+            result.style.background = "#713f12";
+
+            result.textContent =
+                "👍 Good job! You scored " +
+                score +
+                "/5. Review the lesson to strengthen your knowledge.";
+
+        } else {
+
+            result.style.background = "#7f1d1d";
+
+            result.textContent =
+                "📚 You scored " +
+                score +
+                "/5. Review the lesson and try again.";
+
+        }
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
