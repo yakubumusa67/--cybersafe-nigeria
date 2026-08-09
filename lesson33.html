@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lesson 3 - Fake Links & Websites | CyberSafe Nigeria</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #020617, #061b3a);
+            color: white;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .back {
+            display: inline-block;
+            color: #60a5fa;
+            text-decoration: none;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .lesson {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 20px;
+            padding: 35px;
+        }
+
+        .level {
+            display: inline-block;
+            background: #facc15;
+            color: #111827;
+            padding: 7px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .lesson-number {
+            color: #93c5fd;
+            font-weight: bold;
+            margin-top: 18px;
+        }
+
+        h1 {
+            font-size: 38px;
+            color: #60a5fa;
+        }
+
+        h2 {
+            color: #60a5fa;
+            margin-top: 35px;
+        }
+
+        .info {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .info span {
+            background: rgba(255,255,255,0.08);
+            padding: 8px 14px;
+            border-radius: 10px;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        .warning {
+            background: rgba(239,68,68,0.12);
+            border-left: 4px solid #ef4444;
+            padding: 18px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .tip {
+            background: rgba(34,197,94,0.12);
+            border-left: 4px solid #22c55e;
+            padding: 18px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .quiz {
+            background: rgba(96,165,250,0.1);
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 35px;
+        }
+
+        .quiz button {
+            display: block;
+            width: 100%;
+            text-align: left;
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .quiz button:hover {
+            background: #1d4ed8;
+        }
+
+        #answer {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin-top: 35px;
+        }
+
+        .navigation a {
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            padding: 13px 20px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .navigation a:hover {
+            background: #1d4ed8;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 30px;
+            }
+
+            .lesson {
+                padding: 22px;
+            }
+
+            .navigation {
+                flex-direction: column;
+            }
+
+            .navigation a {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <a href="courses.html" class="back">
+        ← Back to Courses
+    </a>
+
+    <div class="lesson">
+
+        <span class="level">🟡 Intermediate</span>
+
+        <div class="lesson-number">
+            Lesson 3 of 5
+        </div>
+
+        <h1>🔗 Fake Links & Websites</h1>
+
+        <div class="info">
+            <span>⏱️ 10 Minutes</span>
+            <span>📖 Course 3</span>
+            <span>🎣 Phishing Awareness</span>
+        </div>
+
+        <h2>Why Do Fake Links Matter?</h2>
+
+        <p>
+            Phishing attacks often use links that appear legitimate
+            but actually lead to fraudulent websites. These websites
+            may imitate banks, social media platforms, online stores,
+            or other trusted services.
+        </p>
+
+        <p>
+            The goal is usually to convince you to enter information
+            such as usernames, passwords, payment details, or other
+            sensitive information.
+        </p>
+
+        <h2>🚩 Signs of a Suspicious Link</h2>
+
+        <ul>
+            <li>🔗 The domain name looks unfamiliar or slightly different.</li>
+            <li>🔤 The website address contains unexpected spelling changes.</li>
+            <li>🚨 The message pressures you to click immediately.</li>
+            <li>🎁 The link promises an unexpected prize or reward.</li>
+            <li>🔐 The page suddenly asks for sensitive information.</li>
+            <li>📩 The link arrived unexpectedly from an unknown sender.</li>
+        </ul>
+
+        <div class="warning">
+            ⚠️ <strong>Be careful with look-alike websites.</strong>
+            A website can be designed to look almost identical to a
+            legitimate service while being controlled by someone else.
+        </div>
+
+        <h2>🌐 How to Check a Website</h2>
+
+        <p>
+            Before entering sensitive information, look carefully at
+            the website address and make sure you are on the service's
+            legitimate website.
+        </p>
+
+        <p>
+            If you receive an unexpected message asking you to log in,
+            consider opening the official app or typing the organization's
+            known website address yourself instead of following the
+            message's link.
+        </p>
+
+        <div class="tip">
+            🛡️ <strong>CyberSafe Tip:</strong>
+            Don't let urgency make the decision for you. Stop,
+            verify the website, and only then continue.
+        </div>
+
+        <h2>🧠 Remember</h2>
+
+        <p>
+            A familiar logo, professional design, or convincing message
+            does not prove that a website is genuine.
+        </p>
+
+        <p>
+            <strong>
+                Always verify before entering sensitive information.
+            </strong>
+        </p>
+
+        <div class="quiz">
+
+            <h2>Quick Quiz</h2>
+
+            <p>
+                What should you do if an unexpected message contains
+                a link asking you to log in?
+            </p>
+
+            <button onclick="checkAnswer('wrong')">
+                A. Click it immediately
+            </button>
+
+            <button onclick="checkAnswer('correct')">
+                B. Verify the website and request before logging in
+            </button>
+
+            <button onclick="checkAnswer('wrong')">
+                C. Enter your password to see what happens
+            </button>
+
+            <div id="answer"></div>
+
+        </div>
+
+        <div class="navigation">
+
+            <a href="lesson32.html">
+                ← Previous Lesson
+            </a>
+
+            <a href="lesson34.html">
+                Next Lesson →
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function checkAnswer(answer) {
+
+    const result = document.getElementById("answer");
+
+    if (answer === "correct") {
+
+        result.innerHTML =
+            "✅ Correct! Verify the website and request before entering sensitive information.";
+
+        result.style.color = "#4ade80";
+
+    } else {
+
+        result.innerHTML =
+            "❌ Not quite. Think about verifying unexpected links first.";
+
+        result.style.color = "#f87171";
+    }
+}
+</script>
+
+</body>
+</html>
