@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSafe67 | Login</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #050505;
+            color: white;
+            padding: 20px;
+        }
+
+        .auth-container {
+            width: 100%;
+            max-width: 420px;
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 18px;
+            padding: 30px;
+            box-shadow: 0 0 30px rgba(0, 255, 120, 0.08);
+        }
+
+        .logo {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .logo span {
+            color: #00ff88;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #aaa;
+            margin-bottom: 25px;
+        }
+
+        .tabs {
+            display: flex;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #333;
+        }
+
+        .tab {
+            flex: 1;
+            padding: 12px;
+            background: none;
+            border: none;
+            color: #aaa;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .tab.active {
+            color: #00ff88;
+            border-bottom: 2px solid #00ff88;
+        }
+
+        .form {
+            display: none;
+        }
+
+        .form.active {
+            display: block;
+        }
+
+        .input-group {
+            margin-bottom: 17px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 7px;
+            font-size: 14px;
+            color: #ddd;
+        }
+
+        input {
+            width: 100%;
+            padding: 13px;
+            border-radius: 9px;
+            border: 1px solid #333;
+            background: #080808;
+            color: white;
+            outline: none;
+            font-size: 15px;
+        }
+
+        input:focus {
+            border-color: #00ff88;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 9px;
+            background: #00ff88;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        .btn:hover {
+            opacity: 0.85;
+        }
+
+        .message {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+            min-height: 20px;
+        }
+
+        .back {
+            display: block;
+            text-align: center;
+            margin-top: 22px;
+            color: #00ff88;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .back:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="auth-container">
+
+    <div class="logo">
+        CyberSafe<span>67</span>
+    </div>
+
+    <p class="subtitle">
+        Learn. Protect. Stay CyberSafe.
+    </p>
+
+    <div class="tabs">
+        <button class="tab active" onclick="showForm('login', this)">
+            Login
+        </button>
+
+        <button class="tab" onclick="showForm('register', this)">
+            Register
+        </button>
+    </div>
+
+    <!-- LOGIN -->
+    <form id="loginForm" class="form active">
+
+        <div class="input-group">
+            <label>Email</label>
+            <input
+                type="email"
+                id="loginEmail"
+                placeholder="Enter your email"
+                required
+            >
+        </div>
+
+        <div class="input-group">
+            <label>Password</label>
+            <input
+                type="password"
+                id="loginPassword"
+                placeholder="Enter your password"
+                required
+            >
+        </div>
+
+        <button type="submit" class="btn">
+            Login
+        </button>
+
+        <div id="loginMessage" class="message"></div>
+
+    </form>
+
+
+    <!-- REGISTER -->
+    <form id="registerForm" class="form">
+
+        <div class="input-group">
+            <label>Full Name</label>
+            <input
+                type="text"
+                id="registerName"
+                placeholder="Enter your name"
+                required
+            >
+        </div>
+
+        <div class="input-group">
+            <label>Email</label>
+            <input
+                type="email"
+                id="registerEmail"
+                placeholder="Enter your email"
+                required
+            >
+        </div>
+
+        <div class="input-group">
+            <label>Password</label>
+            <input
+                type="password"
+                id="registerPassword"
+                placeholder="Create a password"
+                required
+            >
+        </div>
+
+        <button type="submit" class="btn">
+            Create Account
+        </button>
+
+        <div id="registerMessage" class="message"></div>
+
+    </form>
+
+    <a href="index.html" class="back">
+        ← Back to CyberSafe67
+    </a>
+
+</div>
+
+
+<script>
+
+function showForm(formName, button) {
+
+    document.querySelectorAll(".form").forEach(form => {
+        form.classList.remove("active");
+    });
+
+    document.querySelectorAll(".tab").forEach(tab => {
+        tab.classList.remove("active");
+    });
+
+    document.getElementById(formName + "Form")
+        .classList.add("active");
+
+    button.classList.add("active");
+}
+
+
+// REGISTER
+document.getElementById("registerForm").addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    const name = document.getElementById("registerName").value.trim();
+    const email = document.getElementById("registerEmail").value.trim();
+    const password = document.getElementById("registerPassword").value;
+
+    if (password.length < 8) {
+        document.getElementById("registerMessage").textContent =
+            "Password must contain at least 8 characters.";
+        return;
+    }
+
+    const user = {
+        name: name,
+        email: email,
+        password: password
+    };
+
+    localStorage.setItem("cybersafe67User", JSON.stringify(user));
+
+    document.getElementById("registerMessage").textContent =
+        "Account created successfully!";
+
+    document.getElementById("registerForm").reset();
+});
+
+
+// LOGIN
+document.getElementById("loginForm").addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    const email = document.getElementById("loginEmail").value.trim();
+    const password = document.getElementById("loginPassword").value;
+
+    const savedUser =
+        JSON.parse(localStorage.getItem("cybersafe67User"));
+
+    if (!savedUser) {
+        document.getElementById("loginMessage").textContent =
+            "No account found. Please register first.";
+        return;
+    }
+
+    if (
+        email === savedUser.email &&
+        password === savedUser.password
+    ) {
+
+        localStorage.setItem("cybersafe67LoggedIn", "true");
+
+        document.getElementById("loginMessage").textContent =
+            "Login successful! Welcome back, " + savedUser.name + " 👋";
+
+        setTimeout(function() {
+            window.location.href = "dashboard.html";
+        }, 1000);
+
+    } else {
+
+        document.getElementById("loginMessage").textContent =
+            "Incorrect email or password.";
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>
