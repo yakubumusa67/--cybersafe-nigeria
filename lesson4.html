@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 4 - Phishing | CyberSafe Nigeria</title>
+
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #020617, #001f3f, #003b66);
+            color: white;
+            line-height: 1.7;
+        }
+
+        header {
+            padding: 30px 8%;
+            text-align: center;
+            background: rgba(0,0,0,.35);
+        }
+
+        header h1 { margin: 0; font-size: 2.3rem; }
+
+        .shield { font-size: 2.5rem; }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 35px auto;
+        }
+
+        .back {
+            color: #60a5fa;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .lesson-number {
+            color: #38bdf8;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+
+        h2 { font-size: 2rem; }
+
+        h3 {
+            color: #38bdf8;
+            margin-top: 10px;
+        }
+
+        .time { color: #cbd5e1; }
+
+        .card {
+            background: rgba(255,255,255,.06);
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,.1);
+        }
+
+        .danger { border-left: 4px solid #ef4444; }
+        .safe { border-left: 4px solid #22c55e; }
+        .warning { border-left: 4px solid #facc15; }
+
+        li { margin: 8px 0; }
+
+        .quiz {
+            background: rgba(15,23,42,.8);
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 40px;
+        }
+
+        .question { margin-bottom: 25px; }
+
+        .question button {
+            display: block;
+            width: 100%;
+            text-align: left;
+            margin: 8px 0;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 8px;
+            background: #1e40af;
+            color: white;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .question button:hover {
+            background: #2563eb;
+        }
+
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: bold;
+            display: none;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin-top: 40px;
+            padding-bottom: 50px;
+        }
+
+        .nav-button {
+            padding: 13px 22px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: rgba(0,0,0,.4);
+            color: #94a3b8;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="shield">🛡️</div>
+    <h1>CyberSafe Nigeria</h1>
+    <p>Cybersecurity Education & Awareness</p>
+</header>
+
+<main class="container">
+
+    <a href="lesson3.html" class="back">← Back to Lesson 3</a>
+
+    <p class="lesson-number">Lesson 4 of 50</p>
+
+    <h2>Phishing: Recognizing Online Scams</h2>
+
+    <p class="time">⏱ Estimated Time: 20 Minutes</p>
+
+    <div class="card">
+        <h3>What is Phishing?</h3>
+
+        <p>
+            Phishing is a cyberattack in which an attacker pretends
+            to be a trustworthy person, company, or service in order
+            to trick someone into revealing information or taking an
+            unsafe action.
+        </p>
+
+        <p>
+            Phishing can happen through email, text messages, social
+            media, phone calls, or fake websites.
+        </p>
+    </div>
+
+    <div class="card danger">
+        <h3>🎣 Common Phishing Examples</h3>
+
+        <ul>
+            <li>A fake bank message asking you to verify your account.</li>
+            <li>A fake delivery message containing a suspicious link.</li>
+            <li>A fake social-media login page asking for your password.</li>
+            <li>A message pretending to be your boss requesting money.</li>
+            <li>A fake prize notification asking for personal information.</li>
+        </ul>
+    </div>
+
+    <div class="card warning">
+        <h3>⚠️ Warning Signs of Phishing</h3>
+
+        <ul>
+            <li>Unexpected messages.</li>
+            <li>Urgent or threatening language.</li>
+            <li>Suspicious links.</li>
+            <li>Requests for passwords or verification codes.</li>
+            <li>Requests for money or financial information.</li>
+            <li>Unusual sender addresses or phone numbers.</li>
+            <li>Spelling or grammar that seems unusual.</li>
+            <li>Offers that seem too good to be true.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>🔗 Check Links Before Clicking</h3>
+
+        <p>
+            Attackers may create links that look similar to legitimate
+            websites. Before opening a link, check where it actually
+            leads and whether the domain belongs to the organization
+            you expect.
+        </p>
+
+        <p>
+            When in doubt, open the organization's official website
+            yourself instead of using the link in the message.
+        </p>
+    </div>
+
+    <div class="card safe">
+        <h3>🛡️ How to Protect Yourself</h3>
+
+        <ul>
+            <li>Do not rush because a message says you must act immediately.</li>
+            <li>Never share passwords or one-time verification codes.</li>
+            <li>Verify unexpected requests through another trusted channel.</li>
+            <li>Do not open suspicious attachments.</li>
+            <li>Use multi-factor authentication.</li>
+            <li>Report suspicious messages.</li>
+            <li>Keep your devices and applications updated.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>🚨 What If You Clicked a Phishing Link?</h3>
+
+        <p>
+            Don't panic. Stop interacting with the suspicious page
+            and avoid entering additional information.
+        </p>
+
+        <p>
+            If you entered a password, change it immediately from the
+            legitimate service and review your account security.
+            If financial information was exposed, contact your bank
+            or financial institution through an official channel.
+        </p>
+    </div>
+
+    <!-- QUIZ -->
+
+    <section class="quiz">
+
+        <h2>Quick Quiz</h2>
+
+        <div class="question">
+            <p><strong>1. What is phishing?</strong></p>
+
+            <button onclick="answer(this,false)">A. A method of backing up files</button>
+            <button onclick="answer(this,true)">B. Tricking people into revealing information or taking unsafe actions</button>
+            <button onclick="answer(this,false)">C. A type of computer hardware</button>
+            <button onclick="answer(this,false)">D. A software update</button>
+        </div>
+
+        <div class="question">
+            <p><strong>2. Which is a common phishing warning sign?</strong></p>
+
+            <button onclick="answer(this,false)">A. A normal software update</button>
+            <button onclick="answer(this,true)">B. An urgent message asking for sensitive information</button>
+            <button onclick="answer(this,false)">C. A trusted offline document</button>
+            <button onclick="answer(this,false)">D. A regular computer restart</button>
+        </div>
+
+        <div class="question">
+            <p><strong>3. Should you share a one-time verification code with someone who contacts you?</strong></p>
+
+            <button onclick="answer(this,false)">A. Yes, if they sound convincing</button>
+            <button onclick="answer(this,true)">B. No</button>
+            <button onclick="answer(this,false)">C. Yes, if they know your name</button>
+            <button onclick="answer(this,false)">D. Yes, if they say they are from support</button>
+        </div>
+
+        <div class="question">
+            <p><strong>4. What should you do with a suspicious link?</strong></p>
+
+            <button onclick="answer(this,false)">A. Click it immediately</button>
+            <button onclick="answer(this,true)">B. Avoid it and verify the message independently</button>
+            <button onclick="answer(this,false)">C. Enter your password first</button>
+            <button onclick="answer(this,false)">D. Forward it to friends</button>
+        </div>
+
+        <div class="question">
+            <p><strong>5. What should you do if you entered your password on a phishing site?</strong></p>
+
+            <button onclick="answer(this,false)">A. Ignore it</button>
+            <button onclick="answer(this,true)">B. Change the password through the legitimate service</button>
+            <button onclick="answer(this,false)">C. Give the attacker another password</button>
+            <button onclick="answer(this,false)">D. Post the password online</button>
+        </div>
+
+        <div id="quizResult" class="result"></div>
+
+    </section>
+
+    <div class="navigation">
+        <a href="lesson3.html" class="nav-button">← Previous Lesson</a>
+        <a href="lesson5.html" class="nav-button">Next Lesson →</a>
+    </div>
+
+</main>
+
+<footer>
+    <p>© 2026 CyberSafe Nigeria</p>
+    <p>Designed & Founded by Yakubu Musa</p>
+</footer>
+
+<script>
+let score = 0;
+let answered = 0;
+
+function answer(button, correct) {
+
+    if (button.parentElement.dataset.answered === "true") {
+        return;
+    }
+
+    button.parentElement.dataset.answered = "true";
+    answered++;
+
+    if (correct) {
+        button.style.background = "#16a34a";
+        score++;
+    } else {
+        button.style.background = "#dc2626";
+    }
+
+    if (answered === 5) {
+        const result = document.getElementById("quizResult");
+
+        result.style.display = "block";
+
+        if (score >= 4) {
+            result.textContent =
+                "🎉 Excellent! You scored " + score + "/5.";
+        } else if (score >= 3) {
+            result.textContent =
+                "👍 Good job! You scored " + score + "/5. Review the lesson once more.";
+        } else {
+            result.textContent =
+                "📚 You scored " + score + "/5. Review the lesson and try again.";
+        }
+    }
+}
+</script>
+
+</body>
+</html>
