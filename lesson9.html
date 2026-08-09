@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lesson 9 - Device Security | CyberSafe Nigeria</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #020617, #001f3f, #003b66);
+            color: white;
+            line-height: 1.7;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 8%;
+            background: rgba(0, 0, 0, 0.35);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.3rem;
+        }
+
+        .shield {
+            font-size: 2.5rem;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 35px auto;
+        }
+
+        .back {
+            color: #60a5fa;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .lesson-number {
+            color: #38bdf8;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            color: #38bdf8;
+        }
+
+        .time {
+            color: #cbd5e1;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.06);
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .danger {
+            border-left: 4px solid #ef4444;
+        }
+
+        .safe {
+            border-left: 4px solid #22c55e;
+        }
+
+        .warning {
+            border-left: 4px solid #facc15;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        .quiz {
+            background: rgba(15,23,42,0.85);
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 40px;
+        }
+
+        .question {
+            margin-bottom: 30px;
+        }
+
+        .question button {
+            display: block;
+            width: 100%;
+            text-align: left;
+            margin: 8px 0;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 8px;
+            background: #1e40af;
+            color: white;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .question button:hover {
+            background: #2563eb;
+        }
+
+        .result {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: bold;
+            background: #0f172a;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin-top: 40px;
+            padding-bottom: 50px;
+        }
+
+        .nav-button {
+            padding: 13px 22px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .nav-button:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: rgba(0,0,0,0.4);
+            color: #94a3b8;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="shield">🛡️</div>
+    <h1>CyberSafe Nigeria</h1>
+    <p>Cybersecurity Education & Awareness</p>
+</header>
+
+<main class="container">
+
+    <a href="lesson8.html" class="back">
+        ← Back to Lesson 8
+    </a>
+
+    <p class="lesson-number">
+        Lesson 9 of 10
+    </p>
+
+    <h2>Device Security & Privacy</h2>
+
+    <p class="time">
+        ⏱ Estimated Time: 20 Minutes
+    </p>
+
+    <div class="card">
+
+        <h3>📱 Why Device Security Matters</h3>
+
+        <p>
+            Phones, tablets, and computers contain valuable
+            information such as photos, messages, contacts,
+            documents, passwords, and account information.
+        </p>
+
+        <p>
+            Protecting your devices helps reduce the chance of
+            unauthorized access, data theft, and malware infections.
+        </p>
+
+    </div>
+
+    <div class="card safe">
+
+        <h3>🔄 Keep Your Device Updated</h3>
+
+        <p>
+            Software updates often include security fixes that
+            address vulnerabilities.
+        </p>
+
+        <ul>
+            <li>Update your operating system.</li>
+            <li>Update your applications.</li>
+            <li>Install security updates promptly.</li>
+            <li>Use automatic updates when appropriate.</li>
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🔒 Lock Your Devices</h3>
+
+        <p>
+            Always use a screen lock on your phone, tablet, or
+            computer.
+        </p>
+
+        <ul>
+            <li>Use a strong PIN or password.</li>
+            <li>Use biometric security when available.</li>
+            <li>Set your device to lock automatically.</li>
+            <li>Never leave an unlocked device unattended.</li>
+        </ul>
+
+    </div>
+
+    <div class="card warning">
+
+        <h3>⚠️ Be Careful With Applications</h3>
+
+        <p>
+            Applications can request access to information and
+            device features.
+        </p>
+
+        <ul>
+            <li>Install apps from trusted sources.</li>
+            <li>Review permissions before granting access.</li>
+            <li>Remove applications you no longer need.</li>
+            <li>Be suspicious of apps requesting unnecessary permissions.</li>
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h3>📍 Protect Your Privacy</h3>
+
+        <p>
+            Think carefully about the personal information you
+            share online.
+        </p>
+
+        <ul>
+            <li>Avoid publicly sharing sensitive information.</li>
+            <li>Review privacy settings on social platforms.</li>
+            <li>Be careful when sharing your location.</li>
+            <li>Think before posting photos or documents.</li>
+            <li>Review who can see your information.</li>
+        </ul>
+
+    </div>
+
+    <div class="card danger">
+
+        <h3>🚨 If Your Device Is Lost or Stolen</h3>
+
+        <ol>
+            <li>Use your device's tracking or remote-lock feature if available.</li>
+            <li>Change important account passwords.</li>
+            <li>Contact your mobile provider when appropriate.</li>
+            <li>Notify your organization if it is a work device.</li>
+            <li>Report theft to the appropriate authorities when necessary.</li>
+        </ol>
+
+    </div>
+
+    <div class="card safe">
+
+        <h3>💾 Back Up Important Information</h3>
+
+        <p>
+            Backups can help you recover important information
+            if your device is damaged, lost, stolen, or affected
+            by malware.
+        </p>
+
+        <p>
+            Keep important backups protected and make sure you can
+            actually restore your files when needed.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>✅ Device Security Checklist</h3>
+
+        <ul>
+            <li>Use a screen lock.</li>
+            <li>Keep software updated.</li>
+            <li>Install apps from trusted sources.</li>
+            <li>Review app permissions.</li>
+            <li>Protect personal information.</li>
+            <li>Back up important files.</li>
+            <li>Enable device tracking when available.</li>
+        </ul>
+
+    </div>
+
+    <!-- QUIZ -->
+
+    <section class="quiz">
+
+        <h2>Quick Quiz</h2>
+
+        <div class="question">
+
+            <p>
+                <strong>
+                    1. Why are software updates important?
+                </strong>
+            </p>
+
+            <button onclick="answer(this,true)">
+                A. They can include important security fixes
+            </button>
+
+            <button onclick="answer(this,false)">
+                B. They always make your device faster
+            </button>
+
+            <button onclick="answer(this,false)">
+                C. They remove the need for passwords
+            </button>
+
+            <button onclick="answer(this,false)">
+                D. They make backups unnecessary
+            </button>
+
+        </div>
+
+        <div class="question">
+
+            <p>
+                <strong>
+                    2. What should you use to protect your device?
+                </strong>
+            </p>
+
+            <button onclick="answer(this,false)">
+                A. No security at all
+            </button>
+
+            <button onclick="answer(this,true)">
+                B. A strong screen lock
+            </button>
+
+            <button onclick="answer(this,false)">
+                C. A shared PIN
+            </button>
+
+            <button onclick="answer(this,false)">
+                D. Your name as the PIN
+            </button>
+
+        </div>
+
+        <div class="question">
+
+            <p>
+                <strong>
+                    3. What should you do before installing an unfamiliar app?
+                </strong>
+            </p>
+
+            <button onclick="answer(this,false)">
+                A. Install it immediately
+            </button>
+
+            <button onclick="answer(this,true)">
+                B. Check the source and permissions
+            </button>
+
+            <button onclick="answer(this,false)">
+                C. Give it every permission
+            </button>
+
+            <button onclick="answer(this,false)">
+                D. Disable your security software
+            </button>
+
+        </div>
+
+        <div class="question">
+
+            <p>
+                <strong>
+                    4. Why are backups useful?
+                </strong>
+            </p>
+
+            <button onclick="answer(this,true)">
+                A. They can help recover important information
+            </button>
+
+            <button onclick="answer(this,false)">
+                B. They prevent every cyberattack
+            </button>
+
+            <button onclick="answer(this,false)">
+                C. They replace passwords
+            </button>
+
+            <button onclick="answer(this,false)">
+                D. They increase Wi-Fi speed
+            </button>
+
+        </div>
+
+        <div class="question">
+
+            <p>
+                <strong>
+                    5. What should you do if your device is lost?
+                </strong>
+            </p>
+
+            <button onclick="answer(this,false)">
+                A. Ignore it
+            </button>
+
+            <button onclick="answer(this,true)">
+                B. Use available security features and protect your accounts
+            </button>
+
+            <button onclick="answer(this,false)">
+                C. Share your passwords publicly
+            </button>
+
+            <button onclick="answer(this,false)">
+                D. Wait several months before acting
+            </button>
+
+        </div>
+
+        <div id="quizResult" class="result"></div>
+
+    </section>
+
+    <div class="navigation">
+
+        <a href="lesson8.html" class="nav-button">
+            ← Previous Lesson
+        </a>
+
+        <a href="lesson10.html" class="nav-button">
+            Next Lesson →
+        </a>
+
+    </div>
+
+</main>
+
+<footer>
+    <p>© 2026 CyberSafe Nigeria</p>
+    <p>Designed & Founded by Yakubu Musa</p>
+</footer>
+
+<script>
+
+let score = 0;
+let answered = 0;
+
+function answer(button, correct) {
+
+    const question = button.parentElement;
+
+    if (question.dataset.answered === "true") {
+        return;
+    }
+
+    question.dataset.answered = "true";
+    answered++;
+
+    if (correct) {
+        button.style.background = "#16a34a";
+        score++;
+    } else {
+        button.style.background = "#dc2626";
+    }
+
+    if (answered === 5) {
+
+        const result =
+            document.getElementById("quizResult");
+
+        result.style.display = "block";
+
+        if (score === 5) {
+            result.textContent =
+                "🏆 Perfect! You scored 5/5.";
+        } else if (score >= 4) {
+            result.textContent =
+                "🎉 Excellent! You scored " + score + "/5.";
+        } else if (score >= 3) {
+            result.textContent =
+                "👍 Good job! You scored " + score + "/5.";
+        } else {
+            result.textContent =
+                "📚 You scored " + score +
+                "/5. Review the lesson and try again.";
+        }
+    }
+}
+
+</script>
+
+</body>
+</html>
