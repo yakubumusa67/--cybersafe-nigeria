@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lesson 6 - Social Engineering | CyberSafe Nigeria</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #020617, #001f3f, #003b66);
+            color: white;
+            line-height: 1.7;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 8%;
+            background: rgba(0, 0, 0, 0.35);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.3rem;
+        }
+
+        .shield {
+            font-size: 2.5rem;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 35px auto;
+        }
+
+        .back {
+            color: #60a5fa;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .lesson-number {
+            color: #38bdf8;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            color: #38bdf8;
+        }
+
+        .time {
+            color: #cbd5e1;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.06);
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .danger {
+            border-left: 4px solid #ef4444;
+        }
+
+        .safe {
+            border-left: 4px solid #22c55e;
+        }
+
+        .warning {
+            border-left: 4px solid #facc15;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        .example {
+            background: #020617;
+            padding: 18px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .quiz {
+            background: rgba(15,23,42,0.85);
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 40px;
+        }
+
+        .question {
+            margin-bottom: 30px;
+        }
+
+        .question button {
+            display: block;
+            width: 100%;
+            text-align: left;
+            margin: 8px 0;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 8px;
+            background: #1e40af;
+            color: white;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .question button:hover {
+            background: #2563eb;
+        }
+
+        .result {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: bold;
+            background: #0f172a;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin-top: 40px;
+            padding-bottom: 50px;
+        }
+
+        .nav-button {
+            padding: 13px 22px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .nav-button:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: rgba(0,0,0,0.4);
+            color: #94a3b8;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="shield">🛡️</div>
+
+    <h1>CyberSafe Nigeria</h1>
+
+    <p>Cybersecurity Education & Awareness</p>
+</header>
+
+<main class="container">
+
+    <a href="lesson5.html" class="back">
+        ← Back to Lesson 5
+    </a>
+
+    <!-- IMPORTANT: COURSE 1 HAS 10 LESSONS -->
+    <p class="lesson-number">
+        Lesson 6 of 10
+    </p>
+
+    <h2>Social Engineering</h2>
+
+    <p class="time">
+        ⏱ Estimated Time: 20 Minutes
+    </p>
+
+    <div class="card">
+
+        <h3>What Is Social Engineering?</h3>
+
+        <p>
+            Social engineering is the use of deception and
+            psychological manipulation to trick people into
+            revealing information, giving access, sending money,
+            or performing an action that benefits an attacker.
+        </p>
+
+        <p>
+            Instead of attacking a computer directly, an attacker
+            may target the person using the computer.
+        </p>
+
+    </div>
+
+    <div class="card danger">
+
+        <h3>🚨 Common Social Engineering Attacks</h3>
+
+        <ul>
+            <li><strong>Phishing:</strong> Fake messages designed to steal information.</li>
+
+            <li><strong>Smishing:</strong> Phishing attacks delivered through SMS or messaging apps.</li>
+
+            <li><strong>Vishing:</strong> Fraudulent phone calls designed to manipulate victims.</li>
+
+            <li><strong>Impersonation:</strong> Pretending to be a trusted person or organization.</li>
+
+            <li><strong>Baiting:</strong> Offering something attractive to trick someone into taking an unsafe action.</li>
+
+            <li><strong>Pretexting:</strong> Creating a believable fake story to obtain information.</li>
+        </ul>
+
+    </div>
+
+    <div class="card warning">
+
+        <h3>🎣 Recognizing Phishing</h3>
+
+        <p>
+            Phishing messages often create urgency or fear.
+            They may tell you that your account will be closed,
+            your payment failed, or that you must act immediately.
+        </p>
+
+        <div class="example">
+
+            <strong>Example:</strong>
+
+            <p>
+                "URGENT! Your bank account will be suspended.
+                Click this link immediately to verify your account."
+            </p>
+
+            <p>
+                🚩 The urgency and unexpected link are warning signs.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🧠 Why Social Engineering Works</h3>
+
+        <p>
+            Attackers often take advantage of normal human emotions
+            and behaviors.
+        </p>
+
+        <ul>
+            <li>Fear</li>
+            <li>Curiosity</li>
+            <li>Trust</li>
+            <li>Urgency</li>
+            <li>Greed</li>
+            <li>Authority</li>
+        </ul>
+
+        <p>
+            A message may appear to come from a bank, employer,
+            friend, delivery company, government organization,
+            or another trusted source.
+        </p>
+
+    </div>
+
+    <div class="card safe">
+
+        <h3>🛡️ How to Protect Yourself</h3>
+
+        <ol>
+            <li>Slow down when a message creates unusual urgency.</li>
+
+            <li>Verify unexpected requests through an official channel.</li>
+
+            <li>Do not click suspicious links or attachments.</li>
+
+            <li>Never share passwords or verification codes.</li>
+
+            <li>Check the sender carefully.</li>
+
+            <li>Use official websites instead of links in suspicious messages.</li>
+
+            <li>Report suspicious messages when appropriate.</li>
+        </ol>
+
+    </div>
+
+    <div class="card warning">
+
+        <h3>💰 Social Engineering and Online Fraud</h3>
+
+        <p>
+            Social engineering is commonly used in online scams.
+            An attacker may pretend to be a friend, business,
+            bank employee, online seller, or other trusted person.
+        </p>
+
+        <p>
+            The goal may be to convince the victim to send money,
+            disclose confidential information, or provide access
+            to an account.
+        </p>
+
+        <p>
+            <strong>
+                If someone pressures you to act immediately,
+                stop and verify the request independently.
+            </strong>
+        </p>
+
+    </div>
+
+    <div class="card safe">
+
+        <h3>✅ Remember</h3>
+
+        <ul>
+            <li>People can be targeted just like computers.</li>
+
+            <li>Never trust a message simply because it looks official.</li>
+
+            <li>Urgency is a common manipulation technique.</li>
+
+            <li>Verify important requests independently.</li>
+
+            <li>Think before you click, reply, pay, or share information.</li>
+        </ul>
+
+    </div>
+
+
+    <!-- QUIZ -->
+
+    <section class="quiz">
+
+        <h2>Quick Quiz</h2>
+
+        <div class="question">
+
+            <p>
+                <strong>
+                    1. What is social engineering?
+                </strong>
+            </p>
+
+            <button onclick="answer(this,false)">
+                A. Repairing a computer
+            </button>
+
+            <button onclick="answer(this,true)">
+                B. Manipulating people to perform an unsafe action
+            </button>
+
+            <button onclick="answer(this,false)">
+                C. Installing a printer
+            </button>
+
+            <button onclick="answer(this,false)">
+                D. Increasing internet speed
+            </button>
+
+        </div>
+
+
+        <div class="question">
+
+            <p>
+                <strong>
+                    2. What is phishing?
+                </strong>
+            </p>
+
+            <button onclick="answer(this,true)">
+                A. A deceptive attempt to obtain information
+            </button>
+
+            <button onclick="answer(this,false)">
+                B. A type of computer monitor
+            </button>
+
+            <button onclick="answer(this,false)">
+                C. A method of improving Wi-Fi
+            </button>
+
+            <button onclick="answer(this,false)">
+                D. A legitimate banking service
+            </button>
+
+        </div>
+
+
+        <div class="question">
+
+            <p>
+                <strong>
+                    3. What should you do when a message creates unusual urgency?
+                </strong>
+            </p>
+
+            <button onclick="answer(this,false)">
+                A. Click immediately
+            </button>
+
+            <button onclick="answer(this,false)">
+                B. Send your password
+            </button>
+
+            <button onclick="answer(this,true)">
+                C. Stop and verify the request
+            </button>
+
+            <button onclick="answer(this,false)">
+                D. Forward it to everyone
+            </button>
+
+        </div>
+
+
+        <div class="question">
+
+            <p>
+                <strong>
+                    4. What is vishing?
+                </strong>
+            </p>
+
+            <button onclick="answer(this,false)">
+                A. Phishing through a website
+            </button>
+
+            <button onclick="answer(this,true)">
+                B. Fraudulent social engineering through phone calls
+            </button>
+
+            <button onclick="answer(this,false)">
+                C. A password manager
+            </button>
+
+            <button onclick="answer(this,false)">
+                D. A type of antivirus
+            </button>
+
+        </div>
+
+
+        <div class="question">
+
+            <p>
+                <strong>
+                    5. Which action is safest?
+                </strong>
+            </p>
+
+            <button onclick="answer(this,false)">
+                A. Trust every message from a familiar logo
+            </button>
+
+            <button onclick="answer(this,false)">
+                B. Share verification codes with callers
+            </button>
+
+            <button onclick="answer(this,true)">
+                C. Verify unexpected requests independently
+            </button>
+
+            <button onclick="answer(this,false)">
+                D. Click every urgent link
+            </button>
+
+        </div>
+
+
+        <div id="quizResult" class="result"></div>
+
+    </section>
+
+
+    <div class="navigation">
+
+        <a href="lesson5.html" class="nav-button">
+            ← Previous Lesson
+        </a>
+
+        <a href="lesson7.html" class="nav-button">
+            Next Lesson →
+        </a>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <p>© 2026 CyberSafe Nigeria</p>
+
+    <p>
+        Designed & Founded by Yakubu Musa
+    </p>
+
+</footer>
+
+
+<script>
+
+let score = 0;
+let answered = 0;
+
+function answer(button, correct) {
+
+    const question = button.parentElement;
+
+    if (question.dataset.answered === "true") {
+        return;
+    }
+
+    question.dataset.answered = "true";
+
+    answered++;
+
+    if (correct) {
+
+        button.style.background = "#16a34a";
+
+        score++;
+
+    } else {
+
+        button.style.background = "#dc2626";
+
+    }
+
+    if (answered === 5) {
+
+        const result =
+            document.getElementById("quizResult");
+
+        result.style.display = "block";
+
+        if (score === 5) {
+
+            result.textContent =
+                "🏆 Perfect! You scored 5/5.";
+
+        } else if (score >= 4) {
+
+            result.textContent =
+                "🎉 Excellent! You scored " +
+                score + "/5.";
+
+        } else if (score >= 3) {
+
+            result.textContent =
+                "👍 Good job! You scored " +
+                score + "/5.";
+
+        } else {
+
+            result.textContent =
+                "📚 You scored " +
+                score +
+                "/5. Review the lesson and try again.";
+
+        }
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
