@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Course 3 - Phishing Awareness | CyberSafe Nigeria</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #020617, #061b3a);
+            color: white;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .back {
+            display: inline-block;
+            color: #60a5fa;
+            text-decoration: none;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .lesson {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 20px;
+            padding: 35px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .level {
+            display: inline-block;
+            background: #facc15;
+            color: #111827;
+            padding: 7px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .lesson-number {
+            color: #93c5fd;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        h1 {
+            font-size: 38px;
+            color: #60a5fa;
+            margin: 10px 0 20px;
+        }
+
+        h2 {
+            color: #60a5fa;
+            margin-top: 35px;
+        }
+
+        .info {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .info span {
+            background: rgba(255,255,255,0.08);
+            padding: 8px 14px;
+            border-radius: 10px;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        .warning {
+            background: rgba(239, 68, 68, 0.12);
+            border-left: 4px solid #ef4444;
+            padding: 18px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .tip {
+            background: rgba(34, 197, 94, 0.12);
+            border-left: 4px solid #22c55e;
+            padding: 18px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .quiz {
+            background: rgba(96, 165, 250, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 35px;
+        }
+
+        .quiz button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .quiz button:hover {
+            background: #1d4ed8;
+        }
+
+        #answer {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin-top: 35px;
+        }
+
+        .navigation a {
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            padding: 13px 20px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .navigation a:hover {
+            background: #1d4ed8;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 30px;
+            }
+
+            .lesson {
+                padding: 22px;
+            }
+
+            .navigation {
+                flex-direction: column;
+            }
+
+            .navigation a {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <a href="courses.html" class="back">← Back to Courses</a>
+
+    <div class="lesson">
+
+        <span class="level">🟡 Intermediate</span>
+
+        <div class="lesson-number">
+            Lesson 1 of 5
+        </div>
+
+        <h1>🎣 Introduction to Phishing</h1>
+
+        <div class="info">
+            <span>⏱️ 10 Minutes</span>
+            <span>📖 Course 3</span>
+            <span>🎓 Phishing Awareness</span>
+        </div>
+
+        <h2>What is Phishing?</h2>
+
+        <p>
+            Phishing is a type of cybercrime where attackers pretend to be
+            trustworthy people, companies, banks, websites or organizations
+            in order to trick people into revealing sensitive information.
+        </p>
+
+        <p>
+            The attacker may use an email, text message, phone call,
+            social media message or fake website to make the victim believe
+            that the request is legitimate.
+        </p>
+
+        <h2>What Information Do Attackers Want?</h2>
+
+        <ul>
+            <li>🔑 Passwords</li>
+            <li>💳 Bank or payment information</li>
+            <li>📧 Email account details</li>
+            <li>📱 Phone numbers and personal information</li>
+            <li>🔐 Login credentials</li>
+        </ul>
+
+        <div class="warning">
+            ⚠️ <strong>Important:</strong>
+            A message that looks official does not automatically mean
+            that it is genuine. Always verify suspicious requests before
+            clicking links or providing information.
+        </div>
+
+        <h2>Common Signs of Phishing</h2>
+
+        <ul>
+            <li>🚨 Messages creating a sense of urgency</li>
+            <li>🔗 Suspicious or unfamiliar links</li>
+            <li>✍️ Spelling or grammar mistakes</li>
+            <li>🎁 Unexpected prizes or rewards</li>
+            <li>🔐 Requests for passwords or sensitive information</li>
+            <li>👤 Messages pretending to be someone you know</li>
+        </ul>
+
+        <div class="tip">
+            🛡️ <strong>CyberSafe Tip:</strong>
+            Stop and verify before you click. If a message asks you to
+            provide sensitive information urgently, treat it with caution.
+        </div>
+
+        <div class="quiz">
+
+            <h2>Quick Quiz</h2>
+
+            <p>
+                What is the main goal of a phishing attack?
+            </p>
+
+            <button onclick="checkAnswer('wrong')">
+                A. Make your computer faster
+            </button>
+
+            <button onclick="checkAnswer('correct')">
+                B. Trick you into revealing information
+            </button>
+
+            <button onclick="checkAnswer('wrong')">
+                C. Improve your internet connection
+            </button>
+
+            <div id="answer"></div>
+
+        </div>
+
+        <div class="navigation">
+
+            <a href="courses.html">
+                ← Back to Courses
+            </a>
+
+            <a href="lesson32.html">
+                Next Lesson →
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function checkAnswer(answer) {
+
+    const result = document.getElementById("answer");
+
+    if (answer === "correct") {
+        result.innerHTML = "✅ Correct! Phishing is designed to trick victims into revealing sensitive information.";
+        result.style.color = "#4ade80";
+    } else {
+        result.innerHTML = "❌ Not quite. Try again!";
+        result.style.color = "#f87171";
+    }
+
+}
+</script>
+
+</body>
+</html>
