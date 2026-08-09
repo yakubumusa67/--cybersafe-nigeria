@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lesson 5 - Stay Safe From Phishing | CyberSafe Nigeria</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #020617, #061b3a);
+            color: white;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .back {
+            display: inline-block;
+            color: #60a5fa;
+            text-decoration: none;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .lesson {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 20px;
+            padding: 35px;
+        }
+
+        .level {
+            display: inline-block;
+            background: #facc15;
+            color: #111827;
+            padding: 7px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .lesson-number {
+            color: #93c5fd;
+            font-weight: bold;
+            margin-top: 18px;
+        }
+
+        h1 {
+            font-size: 38px;
+            color: #60a5fa;
+            margin: 10px 0 20px;
+        }
+
+        h2 {
+            color: #60a5fa;
+            margin-top: 35px;
+        }
+
+        .info {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .info span {
+            background: rgba(255,255,255,0.08);
+            padding: 8px 14px;
+            border-radius: 10px;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        .warning {
+            background: rgba(239,68,68,0.12);
+            border-left: 4px solid #ef4444;
+            padding: 18px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .tip {
+            background: rgba(34,197,94,0.12);
+            border-left: 4px solid #22c55e;
+            padding: 18px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .quiz {
+            background: rgba(96,165,250,0.1);
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 35px;
+        }
+
+        .question {
+            margin-bottom: 30px;
+        }
+
+        .quiz button {
+            display: block;
+            width: 100%;
+            text-align: left;
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 13px 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 15px;
+        }
+
+        .quiz button:hover {
+            background: #1d4ed8;
+        }
+
+        .quiz button.correct {
+            background: #16a34a;
+        }
+
+        .quiz button.wrong {
+            background: #dc2626;
+        }
+
+        #score {
+            display: none;
+            margin-top: 25px;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: bold;
+            background: rgba(34,197,94,0.15);
+            border: 1px solid #22c55e;
+        }
+
+        .completion {
+            display: none;
+            text-align: center;
+            margin-top: 25px;
+            padding: 30px;
+            border-radius: 15px;
+            background: rgba(34,197,94,0.12);
+            border: 2px solid #22c55e;
+        }
+
+        .completion h2 {
+            color: #4ade80;
+            margin-top: 0;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin-top: 35px;
+        }
+
+        .navigation a {
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            padding: 13px 20px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .navigation a:hover {
+            background: #1d4ed8;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 30px;
+            }
+
+            .lesson {
+                padding: 22px;
+            }
+
+            .navigation {
+                flex-direction: column;
+            }
+
+            .navigation a {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <a href="courses.html" class="back">
+        ← Back to Courses
+    </a>
+
+    <div class="lesson">
+
+        <span class="level">🟡 Intermediate</span>
+
+        <div class="lesson-number">
+            Lesson 5 of 5
+        </div>
+
+        <h1>🛡️ How to Stay Safe From Phishing</h1>
+
+        <div class="info">
+            <span>⏱️ 15 Minutes</span>
+            <span>📖 Course 3</span>
+            <span>🎣 Phishing Awareness</span>
+            <span>🏆 Final Lesson</span>
+        </div>
+
+        <h2>🧠 Think Before You Click</h2>
+
+        <p>
+            Phishing attacks depend on deception. Attackers often try
+            to make you panic, act quickly, or trust a message without
+            checking whether it is genuine.
+        </p>
+
+        <p>
+            The best defense is to slow down and verify suspicious
+            requests before taking action.
+        </p>
+
+        <h2>🛡️ Five Rules for Staying Safe</h2>
+
+        <ul>
+            <li>
+                <strong>1. Stop.</strong>
+                Don't immediately click unexpected links.
+            </li>
+
+            <li>
+                <strong>2. Check.</strong>
+                Look carefully at the sender and website address.
+            </li>
+
+            <li>
+                <strong>3. Verify.</strong>
+                Contact the organization through a trusted channel.
+            </li>
+
+            <li>
+                <strong>4. Protect.</strong>
+                Never share passwords, PINs, or verification codes.
+            </li>
+
+            <li>
+                <strong>5. Report.</strong>
+                Report suspicious messages to the appropriate platform
+                or organization.
+            </li>
+        </ul>
+
+        <div class="warning">
+
+            ⚠️ <strong>Remember:</strong>
+
+            <p>
+                Legitimate organizations generally won't need you to
+                disclose your private password or authentication code
+                through an unexpected message.
+            </p>
+
+        </div>
+
+        <h2>🚨 What If You Already Clicked?</h2>
+
+        <p>
+            Don't panic. Take action quickly.
+        </p>
+
+        <ul>
+            <li>Close the suspicious website.</li>
+            <li>Don't provide additional information.</li>
+            <li>If you entered a password, change it immediately.</li>
+            <li>Enable multi-factor authentication where available.</li>
+            <li>Monitor important accounts for unusual activity.</li>
+            <li>Report the incident through the appropriate channel.</li>
+        </ul>
+
+        <div class="tip">
+
+            🛡️ <strong>CyberSafe Rule:</strong>
+
+            <p>
+                <strong>
+                    STOP → CHECK → VERIFY → PROTECT → REPORT
+                </strong>
+            </p>
+
+        </div>
+
+
+        <!-- FINAL QUIZ -->
+
+        <div class="quiz">
+
+            <h2>🏆 Course 3 Final Quiz</h2>
+
+            <p>
+                Answer all five questions to complete Course 3.
+            </p>
+
+
+            <div class="question">
+
+                <p>
+                    <strong>
+                        1. What is phishing?
+                    </strong>
+                </p>
+
+                <button onclick="answer(this, false)">
+                    A. A method of improving Wi-Fi speed
+                </button>
+
+                <button onclick="answer(this, true)">
+                    B. A technique used to trick people into revealing information
+                </button>
+
+                <button onclick="answer(this, false)">
+                    C. A type of computer hardware
+                </button>
+
+            </div>
+
+
+            <div class="question">
+
+                <p>
+                    <strong>
+                        2. What is smishing?
+                    </strong>
+                </p>
+
+                <button onclick="answer(this, true)">
+                    A. Phishing through SMS or text messages
+                </button>
+
+                <button onclick="answer(this, false)">
+                    B. A password manager
+                </button>
+
+                <button onclick="answer(this, false)">
+                    C. A computer game
+                </button>
+
+            </div>
+
+
+            <div class="question">
+
+                <p>
+                    <strong>
+                        3. What should you do with a suspicious link?
+                    </strong>
+                </p>
+
+                <button onclick="answer(this, false)">
+                    A. Click it immediately
+                </button>
+
+                <button onclick="answer(this, true)">
+                    B. Verify it before clicking
+                </button>
+
+                <button onclick="answer(this, false)">
+                    C. Send it to everyone
+                </button>
+
+            </div>
+
+
+            <div class="question">
+
+                <p>
+                    <strong>
+                        4. Should you share a private verification code with a stranger?
+                    </strong>
+                </p>
+
+                <button onclick="answer(this, false)">
+                    A. Yes
+                </button>
+
+                <button onclick="answer(this, true)">
+                    B. No
+                </button>
+
+                <button onclick="answer(this, false)">
+                    C. Only if they sound convincing
+                </button>
+
+            </div>
+
+
+            <div class="question">
+
+                <p>
+                    <strong>
+                        5. What is the safest response to an unexpected urgent request?
+                    </strong>
+                </p>
+
+                <button onclick="answer(this, false)">
+                    A. Act immediately
+                </button>
+
+                <button onclick="answer(this, true)">
+                    B. Stop, verify, and then decide
+                </button>
+
+                <button onclick="answer(this, false)">
+                    C. Give the sender your password
+                </button>
+
+            </div>
+
+
+            <div id="score"></div>
+
+
+            <div id="completion" class="completion">
+
+                <h2>🎉 COURSE 3 COMPLETED!</h2>
+
+                <p>
+                    Congratulations! You have completed all
+                    <strong>5 lessons</strong> of Phishing Awareness.
+                </p>
+
+                <p>
+                    🎣 You learned how phishing works.
+                </p>
+
+                <p>
+                    📧 You learned to recognize phishing emails.
+                </p>
+
+                <p>
+                    🔗 You learned how to identify suspicious links.
+                </p>
+
+                <p>
+                    📱 You learned about smishing and social-media phishing.
+                </p>
+
+                <p>
+                    🛡️ You learned how to protect yourself.
+                </p>
+
+                <h3>
+                    Keep learning. Stay CyberSafe. 🔐
+                </h3>
+
+            </div>
+
+        </div>
+
+
+        <div class="navigation">
+
+            <a href="lesson34.html">
+                ← Previous Lesson
+            </a>
+
+            <a href="courses.html">
+                🏠 Back to Courses
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+let score = 0;
+let answered = 0;
+
+function answer(button, correct) {
+
+    const question = button.parentElement;
+
+    if (question.dataset.answered === "true") {
+        return;
+    }
+
+    question.dataset.answered = "true";
+
+    answered++;
+
+    if (correct) {
+
+        button.classList.add("correct");
+
+        score++;
+
+    } else {
+
+        button.classList.add("wrong");
+
+    }
+
+    if (answered === 5) {
+
+        const scoreBox =
+            document.getElementById("score");
+
+        const completion =
+            document.getElementById("completion");
+
+        scoreBox.style.display = "block";
+
+        scoreBox.innerHTML =
+            "🏆 You scored " + score + "/5.";
+
+        if (score >= 4) {
+
+            completion.style.display = "block";
+
+            scoreBox.innerHTML +=
+                "<br>🎉 Excellent work! Course 3 completed.";
+
+        } else {
+
+            scoreBox.innerHTML +=
+                "<br>📚 Review the lessons and strengthen your knowledge.";
+
+        }
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
