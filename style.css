@@ -818,3 +818,131 @@ body.dark-mode button{
     margin-top:30px;
     text-align:left;
 }
+/* =========================
+   CYBERSAFE67 NAVIGATION
+========================= */
+
+.main-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background: rgba(10, 15, 20, 0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0, 255, 150, 0.15);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 16px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO */
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.logo span {
+    color: #00ff88;
+}
+
+/* NAV LINKS */
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.main-nav a {
+    color: #d7d7d7;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.main-nav a:hover {
+    color: #00ff88;
+}
+
+.main-nav a.active {
+    color: #00ff88;
+}
+
+/* LOGIN BUTTON */
+
+.nav-login {
+    border: 1px solid #00ff88;
+    padding: 9px 18px;
+    border-radius: 8px;
+}
+
+.nav-login:hover {
+    background: #00ff88;
+    color: #000 !important;
+}
+
+/* MOBILE MENU */
+
+.menu-toggle {
+    display: none;
+
+    background: transparent;
+    border: 1px solid #00ff88;
+    color: #00ff88;
+
+    font-size: 24px;
+    padding: 5px 10px;
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .main-nav {
+        display: none;
+
+        position: absolute;
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+
+        background: #0a0f14;
+
+        flex-direction: column;
+        align-items: center;
+
+        padding: 25px 0;
+
+        border-bottom: 1px solid rgba(0,255,150,0.2);
+    }
+
+    .main-nav.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-container {
+        padding: 14px 18px;
+    }
+
+}
