@@ -348,3 +348,226 @@ function checkPassword(){
     }
 
 }
+/* =====================================================
+   CYBERSAFE67 - HOMEPAGE INTERACTIONS
+   ===================================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    /* ===============================
+       DARK MODE
+       =============================== */
+
+    const darkModeBtn = document.getElementById("darkModeBtn");
+
+    if (darkModeBtn) {
+        darkModeBtn.addEventListener("click", function () {
+            document.body.classList.toggle("light-mode");
+
+            if (document.body.classList.contains("light-mode")) {
+                darkModeBtn.innerHTML = "☀️ Light Mode";
+                localStorage.setItem("cybersafeTheme", "light");
+            } else {
+                darkModeBtn.innerHTML = "🌙 Dark Mode";
+                localStorage.setItem("cybersafeTheme", "dark");
+            }
+        });
+
+        // Remember user's theme
+        const savedTheme = localStorage.getItem("cybersafeTheme");
+
+        if (savedTheme === "light") {
+            document.body.classList.add("light-mode");
+            darkModeBtn.innerHTML = "☀️ Light Mode";
+        }
+    }
+
+
+    /* ===============================
+       SMOOTH SCROLLING
+       =============================== */
+
+    document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+
+        link.addEventListener("click", function (event) {
+
+            const targetId = this.getAttribute("href");
+
+            if (targetId === "#") return;
+
+            const target = document.querySelector(targetId);
+
+            if (target) {
+                event.preventDefault();
+
+                target.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+            }
+        });
+
+    });
+
+
+    /* ===============================
+       SCROLL REVEAL ANIMATION
+       =============================== */
+
+    const revealElements = document.querySelectorAll(
+        ".section, .feature-card, .course-card, .tip-card, .stat-card"
+    );
+
+    const revealObserver = new IntersectionObserver(
+        function (entries) {
+
+            entries.forEach(function (entry) {
+
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.15
+        }
+    );
+
+    revealElements.forEach(function (element) {
+        revealObserver.observe(element);
+    });
+
+
+    /* ===============================
+       NUMBER COUNTERS
+       =============================== */
+
+    const counters = document.querySelectorAll("[data-counter]");
+
+    counters.forEach(function (counter) {
+
+        const target = Number(counter.getAttribute("data-counter"));
+
+        if (isNaN(target)) return;
+
+        let current = 0;
+
+        const increment = Math.max(1, Math.ceil(target / 60));
+
+        function updateCounter() {
+
+            current += increment;
+
+            if (current >= target) {
+                current = target;
+            }
+
+            counter.textContent = current + "+";
+
+            if (current < target) {
+                requestAnimationFrame(updateCounter);
+            }
+        }
+
+        updateCounter();
+
+    });
+
+
+    /* ===============================
+       BACK TO TOP BUTTON
+       =============================== */
+
+    const backToTop = document.getElementById("backToTop");
+
+    if (backToTop) {
+
+        window.addEventListener("scroll", function () {
+
+            if (window.scrollY > 500) {
+                backToTop.classList.add("show");
+            } else {
+                backToTop.classList.remove("show");
+            }
+
+        });
+
+        backToTop.addEventListener("click", function () {
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+        });
+
+    }
+
+
+    /* ===============================
+       SCAM ALERT
+       =============================== */
+
+    const scamAlertBtn = document.getElementById("scamAlertBtn");
+
+    if (scamAlertBtn) {
+
+        scamAlertBtn.addEventListener("click", function () {
+
+            alert(
+                "🚨 SCAM ALERT\n\n" +
+                "Never share your password, OTP, PIN or banking information.\n\n" +
+                "Always verify suspicious messages, links and phone numbers before taking action."
+            );
+
+        });
+
+    }
+
+
+    /* ===============================
+       CURRENT YEAR
+       =============================== */
+
+    const yearElement = document.getElementById("currentYear");
+
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
+
+
+    /* ===============================
+       MOBILE MENU
+       =============================== */
+
+    const menuBtn = document.getElementById("menuBtn");
+    const navMenu = document.getElementById("navMenu");
+
+    if (menuBtn && navMenu) {
+
+        menuBtn.addEventListener("click", function () {
+
+            navMenu.classList.toggle("active");
+
+        });
+
+    }
+
+
+    /* ===============================
+       WELCOME MESSAGE
+       =============================== */
+
+    const loggedInUser = localStorage.getItem("cybersafe67LoggedUser");
+
+    if (loggedInUser) {
+
+        console.log(
+            "Welcome back to CyberSafe67!"
+        );
+
+    }
+
+});
