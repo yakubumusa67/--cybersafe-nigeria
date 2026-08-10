@@ -479,14 +479,25 @@ document.getElementById("completedCourses").textContent =
 // BADGES
 
 let badges = 0;
+let badgeName = "🔒 CyberSafe Beginner";
 
-if (overall >= 25) {
+if (overall >= 100) {
+    badges = 4;
+    badgeName = "🏆 CyberSafe Master";
+} else if (overall >= 75) {
+    badges = 3;
+    badgeName = "🥇 CyberSafe Expert";
+} else if (overall >= 50) {
+    badges = 2;
+    badgeName = "🥈 CyberSafe Defender";
+} else if (overall >= 25) {
     badges = 1;
+    badgeName = "🥉 CyberSafe Beginner";
 }
 
-document.getElementById("badgesEarned").textContent =
-    badges;
+document.getElementById("badgesEarned").textContent = badges;
 
+document.getElementById("beginnerBadge").textContent = badgeName;
 </script>
 
 </body>
