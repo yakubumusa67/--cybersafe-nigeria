@@ -286,12 +286,26 @@ document.getElementById("registerForm").addEventListener("submit", function(e) {
         password: password
     };
 
-    localStorage.setItem("cybersafe67User", JSON.stringify(user));
+    localStorage.setItem(
+        "cybersafe67User",
+        JSON.stringify(user)
+    );
 
-    document.getElementById("registerMessage").textContent =
-        "Account created successfully!";
+    // Put the email into the login form
+    document.getElementById("loginEmail").value = email;
 
+    // Clear registration form
     document.getElementById("registerForm").reset();
+
+    // Switch to Login
+    showForm(
+        "login",
+        document.querySelector(".tab")
+    );
+
+    document.getElementById("loginMessage").textContent =
+        "✅ Account created! Enter your password to login.";
+
 });
 
 
