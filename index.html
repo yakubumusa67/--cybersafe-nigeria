@@ -690,7 +690,27 @@ function checkPassword() {
         strength.textContent = "💪 Very Strong Password";
         strength.style.color = "#39ff88";
     }
+}// =============================
+// DARK / LIGHT MODE
+// =============================
+
+const darkModeBtn = document.getElementById("darkModeBtn");
+
+// Load saved mode
+if (localStorage.getItem("cybersafe67Theme") === "light") {
+    document.body.classList.add("light-mode");
 }
+
+// Toggle mode
+darkModeBtn.addEventListener("click", function () {
+    document.body.classList.toggle("light-mode");
+
+    if (document.body.classList.contains("light-mode")) {
+        localStorage.setItem("cybersafe67Theme", "light");
+    } else {
+        localStorage.setItem("cybersafe67Theme", "dark");
+    }
+});
 </script>
 </body>
 </html>
