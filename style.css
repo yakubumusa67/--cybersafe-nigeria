@@ -1012,3 +1012,41 @@ body.light-mode #darkModeBtn {
     background: #111827;
     color: #ffffff;
 }
+/* ===== PURE BLACK TEXT FIX ===== */
+
+body,
+h1, h2, h3, h4, h5, h6,
+p,
+span,
+label,
+li,
+a,
+small,
+strong,
+div {
+    color: #000000 !important;
+    opacity: 1 !important;
+}
+
+/* Navigation links */
+nav a {
+    color: #000000 !important;
+}
+
+/* Footer */
+footer,
+footer p,
+footer a,
+footer span {
+    color: #000000 !important;
+    opacity: 1 !important;
+}
+
+/* Contact / About text */
+.contact,
+.about,
+.contact p,
+.about p {
+    color: #000000 !important;
+    opacity: 1 !important;
+}
