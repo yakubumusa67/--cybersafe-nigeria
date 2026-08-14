@@ -1060,10 +1060,41 @@ body:not(.light-mode) {
     color: #ffffff;
 }
 
-body:not(.light-mode) p,
-body:not(.light-mode) li,
-body:not(.light-mode) label {
+/* ============================= */
+/* TEXT VISIBILITY FIX            */
+/* ============================= */
+
+/* Dark mode normal text */
+body:not(.light-mode) {
     color: #ffffff;
+}
+
+/* Dark mode text on the main page */
+body:not(.light-mode) .welcome p {
+    color: #ffffff;
+}
+
+/* Scam alert cards */
+body:not(.light-mode) .scam-card,
+body:not(.light-mode) .scam-card p,
+body:not(.light-mode) .scam-alert,
+body:not(.light-mode) .scam-alert p,
+body:not(.light-mode) .alert-card,
+body:not(.light-mode) .alert-card p {
+    color: #000000;
+}
+
+/* Light mode */
+body.light-mode {
+    color: #000000;
+}
+
+body.light-mode p,
+body.light-mode li,
+body.light-mode label {
+    color: #000000;
+}
+
 }
 
 /* Keep navigation visible */
