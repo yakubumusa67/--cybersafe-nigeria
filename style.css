@@ -1007,7 +1007,47 @@ body.light-mode .logo span {
     color: #00c878;
 }
 
-/* Light mode button */
+/* ============================= */
+/* LIGHT MODE FINAL TEXT FIX     */
+/* ============================= */
+
+body.light-mode {
+    background: #ffffff;
+    color: #000000;
+}
+
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode h4,
+body.light-mode h5,
+body.light-mode h6,
+body.light-mode p,
+body.light-mode li,
+body.light-mode label {
+    color: #000000;
+    opacity: 1;
+}
+
+/* Keep links green */
+body.light-mode a {
+    color: #008f5a;
+}
+
+/* Keep buttons readable */
+body.light-mode button,
+body.light-mode .continue {
+    color: #111827;
+}
+
+/* Keep branding green */
+body.light-mode .dashboard-logo span,
+body.light-mode .logo span {
+    color: #00c878;
+}
+
+/* Dark mode button */
 body.light-mode #darkModeBtn {
     background: #111827;
-    color: #
+    color: #ffffff;
+}
