@@ -593,4 +593,6 @@ function checkPassword() {
     } else if (score <= 4) {
         strength.textContent = "🟡 Medium password";
     } else {
-        strength.textContent = "🟢 Strong 
+        strength.textContent = "🟢 Strong";
+    }
+    }
