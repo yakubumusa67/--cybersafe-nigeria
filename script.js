@@ -571,3 +571,28 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
+function checkPassword() {
+    const password = document.getElementById("password").value;
+    const strength = document.getElementById("strength");
+
+    if (password.length === 0) {
+        strength.textContent = "Please enter a password.";
+        return;
+    }
+
+    let score = 0;
+
+    if (password.length >= 12) score++;
+    if (/[A-Z]/.test(password)) score++;
+    if (/[a-z]/.test(password)) score++;
+    if (/[0-9]/.test(password)) score++;
+    if (/[^A-Za-z0-9]/.test(password)) score++;
+
+    if (score <= 2) {
+        strength.textContent = "🔴 Weak password";
+    } else if (score <= 4) {
+        strength.textContent = "🟡 Medium password";
+    } else {
+        strength.textContent = "🟢 Strong password";
+    }
+}
