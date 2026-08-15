@@ -596,3 +596,77 @@ function checkPassword() {
         strength.textContent = "🟢 Strong password";
     }
 }
+/* ============================= */
+/* PASSWORD CHECKER - CYBERSAFE67 */
+/* ============================= */
+
+.password-checker {
+    background: #0b1117;
+    color: #ffffff;
+    border: 1px solid #00f588;
+    border-radius: 18px;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 850px;
+    box-shadow: 0 0 20px rgba(0, 245, 136, 0.12);
+}
+
+.password-checker h2 {
+    color: #ffffff;
+}
+
+.password-checker p {
+    color: #cbd5e1;
+}
+
+.password-checker input {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    background: #111820;
+    color: #ffffff;
+    border: 1px solid #00f588;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.password-checker input::placeholder {
+    color: #94a3b8;
+}
+
+.password-checker button {
+    background: #00f588;
+    color: #050807;
+    border: none;
+    padding: 13px 22px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.password-checker button:hover {
+    opacity: 0.85;
+}
+
+#strength {
+    margin-top: 18px;
+    font-weight: bold;
+    color: #00f588;
+}
+
+.password-tips {
+    margin-top: 25px;
+    background: #111820;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.password-tips h4 {
+    color: #00f588;
+}
+
+.password-tips li {
+    color: #cbd5e1;
+    margin: 8px 0;
+}
