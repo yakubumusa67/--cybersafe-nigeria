@@ -596,3 +596,4 @@ function checkPassword() {
         strength.textContent = "🟢 Strong";
     }
     }
+document.getElementById("checkPasswordBtn").addEventListener("click", checkPassword);
